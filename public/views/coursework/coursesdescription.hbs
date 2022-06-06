@@ -1,0 +1,37 @@
+
+         <header>
+            <div class="menu">
+                <img src="../img/avatar-1.png" alt="Avatar" class="avatar">
+                <div class= "list">
+                <a href="/menupage">Profile</a>
+                <a href="/course">Modules</a>
+                <a href="/coursework">Coursework</a>
+                </div>
+              </div>
+              
+        </header>
+        <form action="/course" method="POST" autocomplete="off" >
+        <input type="hidden" name="_id" value="{{courses._id}}">
+            <h2>Course</h2>
+
+            <div class="container">
+                <label for="moduleName"><b></b></label>
+                <input type="text" placeholder="Enter module name" name="moduleName" value="{{courses.moduleName}}">
+                <div class="text-danger" >{{courses.moduleNameError}}</div>
+ 
+                <label for="noOfCoursework"><b></b></label>
+                <input type="text" placeholder="Enter number of coursework" name="noOfCoursework" value="{{courses.noOfCoursework}}">
+                <div class="text-danger">{{courses.noOfCourseworkError}}</div>
+
+                <label for="description"><b></b></label>
+                <input class="descript" type="text" placeholder="Description" name="description" row="5" value="{{courses.description}}">
+                <div class="text-danger">{{courses.descriptionError}}</div>
+
+                <label for="moduleLeadsEmail"><b></b></label>
+                <input type="email" placeholder="module leader's email" name="moduleLeadsEmail" value="{{ courses.moduleLeadsEmail}}">
+                <div class="text-danger">{{courses.moduleLeadsEmailError}}</div>
+                <button type="submit">Add</button>
+                
+            </div>
+           
+        </form>

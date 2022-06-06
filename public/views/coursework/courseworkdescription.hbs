@@ -1,0 +1,36 @@
+
+        <header>
+            <div class="menu">
+                <img src="../img/avatar-1.png" alt="Avatar" class="avatar">
+                <div class= "list">
+                <a href="/menupage">Profile</a>
+                <a href="/course">Modules</a>
+                <a href="/coursework">Coursework</a>
+                
+                </div>
+              </div>
+        </header>
+        <form action="/coursework" method="POST" autocomplete="off">
+        <input type="hidden" name="_id" value="{{courseworks._id}}">
+            <h2>Coursework</h2>
+
+            <div class="container">
+                <label for="courseworkTitle"><b></b></label>
+                <input type="text" placeholder="Enter coursework title" name="courseworkTitle" id="courseworkTitle" value="{{courseworks.courseworkTitle}}" required>
+                <div class="text-danger" >{{courseworks.courseworkTitleError}}</div>
+
+                <label for="moduleTitle"><b></b></label>
+                <input type="text" placeholder="Enter module name" name="moduleTitle" id="moduleTitle" value="{{courseworks.moduleTitle}}"  required >
+                <div class="text-danger">{{courseworks.moduleTitleError}}</div>
+
+                <label for="submissionDate"><b></b></label>
+                <input type="date" placeholder="Start date" name="submissionDate" id="submissionDate" value="{{courseworks.submissionDate}}" required>
+                 <div class="text-danger">{{courseworks.submissionDateError}}</div>
+
+                <label for="description"><b></b></label>
+                <input class="descript" type="text" placeholder="Description" name="description" rows="5" id="description" value="{{courseworks.description}}" required>
+                 <div class="text-danger">{{courseworks.descriptionError}}</div>        
+                <button type="submit">Add</button>
+                </div>
+        </form>
+    

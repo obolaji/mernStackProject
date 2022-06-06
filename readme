@@ -1,0 +1,13 @@
+npm init
+npm install mongoose
+npm install path
+npm install express
+npm install express-handlebars
+npm install @handlebars/allow-prototype-access
+npm install body-parser
+npm install nodemon
+
+in package.json
+add <"start": "nodemon index.js"> to <"scripts">
+to run the application-
+npm start

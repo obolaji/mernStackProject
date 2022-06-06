@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300&display=swap');
+.menu {
+    height: 100%; 
+    width: 300px; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0; 
+    left: 0;
+    background-color:#c4c4c4; 
+    overflow-x: hidden; 
+    padding-top: 20px;
+  }
+
+  .list{
+      margin-top: 20%;
+  }
+
+  .avatar {
+    margin-top: 30%;
+    margin-left: 32%;
+    vertical-align: middle;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+  
+ 
+  .menu a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    font-family: "Montserrat";
+  }
+  
+  
+  .menu a:hover {
+    color: #f1f1f1;
+  }
+  
+
+  body{
+    background-image: url("../img/backgroundimage.jpg");
+  }
+
+  form {
+    background-image: url("../img/backgroundimage.jpg");
+    width: 60%;
+    margin-left: 350px;
+    margin-top: 10%;
+   }
+   h2 {
+    margin-left: 35%;
+    font-family: "Montserrat";
+    font-size: 30px;
+    color: white;
+    padding-top: 60px;
+}
+input[type=text], input[type=date], input[type=email] {
+    width: 90%;
+    padding: 12px 20px;
+    margin: 5px 30px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    opacity: 0.3;
+  }
+
+.descript{
+  height: 70px;
+}
+header{
+  background-color: black;
+  overflow: hidden;
+}
+.nav a {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: "Montserrat";
+  }
+  button {
+    background-color: white;
+    color: black;
+    padding: 14px 20px;
+    margin: 5px 70px;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+    margin-left: 25%;
+  }
+  .signup{
+    background-color: black;
+    color: white;
+    padding: 14px 20px;
+    margin: 20px 50px;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+    text-decoration: none;
+    font-family: "Montserrat";
+    font-size:12px;
+    
+  }
+  button:hover {
+    opacity: 0.8;
+  }
+
+  .container {
+    padding: 10px 5px;
+    padding-top: 5px;
+    
+  }
+
+  .table{
+    
+    padding-top: 20px ;
+    color: white ;
+    margin-left: 250px ;
+    font-family: "Montserrat";
+    font-size: 15px;
+    width: 900px;
+  }
+
+  .table th, td{
+    padding: 10px 6px;
+  }
+  td a{
+    color: white;
+    text-decoration: none;
+  }
+
+  @media only screen and (min-width: 400px) {
+    .menu {
+      height: 100%; 
+      width: 35%; 
+      position: fixed; 
+      z-index: 1; 
+      top: 0; 
+      left: 0;
+      background-color:#c4c4c4; 
+      overflow-x: hidden; 
+      padding-top: 20px;
+    }
+  
+  
+    .avatar {
+      margin-top: 40%;
+      margin-left: 32%;
+      vertical-align: middle;
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+    }
+    
+    /* The navigation menu links */
+    .menu a {
+      padding: 6px 8px 6px 16px;
+      text-decoration: none;
+      font-size: 20px;
+      color: white;
+      display: block;
+      font-family: "Montserrat";
+    }
+  
+    h2{
+      text-align: center;
+      color: white;
+      margin-top: 10%;
+      font-size: 50px;
+      font-family: "Montserrat";
+      text-align: center;
+      }
+      .table{
+    
+        padding-top: 20px ;
+        color: white ;
+        margin-left: 250px ;
+        font-family: "Montserrat";
+        font-size: 10px;
+        width: 400px;
+      }
+      button {
+        background-color: white;
+        color: black;
+        padding: 14px 20px;
+        margin: 5px 70px;
+        border: none;
+        cursor: pointer;
+        width: 20%;
+        margin-left: 50%;
+        font-size: 10px;
+      }
+}

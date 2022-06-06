@@ -1,0 +1,39 @@
+<h2>Incomplete Coursework List</h2>
+<header>
+            <div class="menu">
+                <img src="../img/avatar-1.png" alt="Avatar" class="avatar">
+                <div class= "list">
+                <a href="/menupage">Profile</a>
+                <a href="/course">Modules</a>
+                <a href="/coursework">Coursework</a>
+                </div>
+              </div>
+              
+</header>
+<table class= "table table-striped">
+        <thead>
+            <th>Coursework Name</th>
+            <th>Module title</th>
+            <th>Submission Date</th>
+            <th>Description</th>
+            <th></th>
+            
+        </thead>
+        <tbody>
+            {{#each courseworklist}}
+            <tr>
+                <td>{{this.courseworkTitle}}</td>
+                <td>{{this.moduleTitle}}</td>
+                <td>{{this.submissionDate}}</td>
+                <td>{{this.description}}</td>
+            <td>
+                <a href="/coursework/{{this._id}}"><i class="fa fa-pencil fa-lg" aria-hidden="true"></i></a>
+                <a href="/coursework/delete/{{this._id}}" onclick="return confirm(' Are you sure you want to delete ?');"><i class="fa fa-trash fa-lg" aria-hidden="true"></i></a>
+            </td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+      <a href="/addcoursework"><button>Add Coursework</button></a>
+
+    {{{body}}}
